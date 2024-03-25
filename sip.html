@@ -1,0 +1,106 @@
+<!Doctype html>
+<html>
+	<head>
+         <meta name="viewport" content="with=device-width, initial-scale=1.0">
+         <title>SIP LOGIN</title>
+		  <link rel="stylesheet" href="style.css">
+           <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,200;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">	
+	</head>
+<body>
+	
+<section class="header">
+<nav> 
+     <a href="index.html"><img src="image/gctu.png"
+     	width="120"
+     	height="100"></a>
+     <div class="nav-Links" onclick="hideMenu()">
+     	<i class="fa fa-times" onclick="hideMenu()"></i>
+
+
+     	<ul>
+			<li><a href="index.html"title="HOME">HOME</a></li>
+			<li><a href="about.html"title="about us">ABOUT US</a></li>
+			<li><a href="admission.html"title="admission">ADMISSION</a></li>
+			<li><a href="sip.html"title="sip login">SIP LOGIN</a></li>
+			<li><a href="Contact.html"title="contact Us">CONTACT </a></li>
+     	</ul>
+     </div>
+     <i class="fa fa-bars"  onclick="showMenu()"></i>
+</nav>	
+
+
+
+
+
+<section class="login">
+
+<div class="row">
+	<div class="login-col">
+		
+		<h1>Login Help</h1>
+		<p>How to Log In
+To log into the GTUC SIP, enter your gtuc email which follows the format (indexNumbe) and enter your password, then click on the Login button.
+
+Probable Feedback Messages
+Username doesnot exist in this system : This means that the (username) you have entered in the provided field does not conform to the standard GTUC email address format. You need to thoroughly check the entered username for any typing errors.
+Your account has been DEACTIVATED : This means that you haven't activated your account for the semester. If you are still a student, ensure that you have paid atleast 60% of your school fees and your SRC dues. Foreign students need to settle atleast 60% of their fees, SRC dues and ISA dues. If you have completed school, please make sure you do not have any outstanding debt at the finance office .
+This Username and Password combination donot match : This means that the password you entered doesnot match the GCTU email address(username) provided. Make sure that your password has been correctly entered.
+
+How to do a password reset
+If you have forgotten your password or your can't log into the SIP for any reason, then you might want to do a password reset.To do a password reset, follow the following steps:
+
+Password Reset Procedure: Click on the "here" link below the login button to lead you to the password reset page. Correctly enter your GTUC email address(username) in the field provided and click on the "Reset Password" button. If your username was correctly entered, a new system generated password would be sent to your GTUC email address. For Information on how to access your GTUC email (indexnumber@live.gctu.edu.gh), contact the IT support services department (ITSS) adjacent the school library.</p>
+		
+		
+		
+	</div>
+
+<div class="login-col">
+	<img src="image/gctu.png">
+		<h2>Student Information Portal (SIP)</h2>
+
+<form action="/action_page">
+	<p>Provide the following details</p>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value=""><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value=""><br><br>
+
+<label for="index">IndexNumber:</label><br>
+  <input type="text" id="index" name="index" value=""><br><br>
+
+  <input type="submit" value="Submit">
+</form> 
+		
+
+	
+</div>
+
+</section>
+
+
+<footer class="footer">
+	<h3>Powered by Salamatu Yahaya copyright @2023</h3>
+</footer>
+
+
+<!-------JavaScript for Toggle Menu----->
+<script>
+	var  navLinks= document.getElementBy("navLinks");
+
+	function showMenu() {
+		navLinks.style.right="0";
+	}
+	function hideMenu() {
+		navLinks.style.right="200px";
+	}
+
+</script>
+
+</body>
+</html>
+
+
